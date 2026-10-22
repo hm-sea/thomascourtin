@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Thomas Courtin</title>
+<meta name="description" content="Thomas Courtin, General Manager - Southeast Asia, H&amp;M">
+<meta name="theme-color" content="#2f3140">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:#2f3140;
+    color:#fff;
+    font-family:"Source Sans 3","Source Sans Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    display:flex;justify-content:center;align-items:center;
+    padding:12px;
+  }
+  .card{
+    position:relative;
+    width:100%;max-width:440px;
+    height:calc(100vh - 24px);height:calc(100dvh - 24px);
+    min-height:560px;max-height:880px;
+    border-radius:28px;overflow:hidden;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;
+    /* background.jpg sits next to this file; the gradient is the fallback. */
+    background:
+      linear-gradient(rgba(18,18,26,.28),rgba(18,18,26,.62)),
+      url("background.jpg") center/cover no-repeat,
+      linear-gradient(160deg,#8f2a2a 0%,#5b5e68 50%,#2a2b34 100%);
+  }
+  .avatar{
+    width:190px;height:190px;border-radius:50%;
+    padding:12px;border:1.5px solid rgba(255,255,255,.45);
+    margin-bottom:30px;
+  }
+  .avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+  h1{font-size:min(2.9rem,9.5vw);font-weight:600;line-height:1.1;white-space:nowrap;text-shadow:0 2px 14px rgba(0,0,0,.55);padding:0 16px}
+  .title{font-size:1.2rem;font-weight:300;margin-top:14px;text-shadow:0 1px 10px rgba(0,0,0,.6);padding:0 16px}
+
+  .glass{
+    background:rgba(255,255,255,.14);
+    -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.5);
+    color:#fff;text-decoration:none;
+    transition:background .2s,transform .1s;
+  }
+  .glass:hover{background:rgba(255,255,255,.26)}
+  .glass:active{transform:scale(.97)}
+  .glass:focus-visible{outline:2px solid #fff;outline-offset:3px}
+
+  .save{
+    margin-top:34px;
+    display:inline-flex;align-items:center;gap:10px;
+    height:52px;padding:0 28px;border-radius:999px;
+    font-size:1.05rem;font-weight:600;letter-spacing:.2px;
+  }
+  .icons{display:flex;gap:28px;margin-top:22px}
+  .icon{
+    width:64px;height:64px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+  }
+  svg{width:26px;height:26px;fill:none;stroke:#fff;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .save svg{width:22px;height:22px}
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="avatar"><img src="avatar.jpg" alt="Thomas Courtin"></div>
+    <h1>Thomas Courtin</h1>
+    <p class="title">General Manager - Southeast Asia</p>
+
+    <a class="glass save" href="thomas-courtin.vcf" download="Thomas Courtin.vcf">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-7 7-7s7 3 7 7"/>
+        <path d="M19 8v6M16 11h6"/>
+      </svg>
+      Save to Contacts
+    </a>
+
+    <div class="icons">
+      <a class="glass icon" href="tel:+60123456789" aria-label="Call Thomas Courtin">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
+      </a>
+      <a class="glass icon" href="mailto:thomas.courtin@hm.com" aria-label="Email Thomas Courtin">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
